@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Blob Download</string>
+    <string name="download_progress">下载进度: %1$d%%</string>
+    <string name="download_complete">下载完成</string>
+    <string name="download_failed">下载失败</string>
+    <string name="download_started">开始下载</string>
+    <string name="permission_required">需要存储权限</string>
+    <string name="grant_permission">授予权限</string>
+</resources>

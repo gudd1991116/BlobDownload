@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/tvConfirmTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确认下载"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <!-- 文件信息 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/teal_50"
+        android:padding="16dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/tvConfirmFileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="文件名: "
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvConfirmFileSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="文件大小: "
+            android:textSize="14sp"
+            android:textColor="@color/gray_600"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvConfirmFileType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="文件类型: "
+            android:textSize="14sp"
+            android:textColor="@color/gray_600" />
+
+    </LinearLayout>
+
+    <!-- 提示信息 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="是否确认下载此文件？"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:paddingBottom="24dp" />
+
+    <!-- 按钮区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btnCancelConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textColor="@color/gray_600"
+            android:background="@android:color/transparent"
+            android:padding="12dp"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/btnConfirmDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认下载"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/teal_700"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
